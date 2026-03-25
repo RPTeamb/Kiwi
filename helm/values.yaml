@@ -89,8 +89,6 @@ mariadb:
       - name: MARIADB_SKIP_TEST_DB
         value: "yes"
 
-    configuration: |-
+    extraConfiguration: |-
       [mysqld]
       max_connections=50
-      character-set-server=utf8mb4
-      collation-server=utf8mb4_unicode_ci
