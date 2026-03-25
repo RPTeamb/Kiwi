@@ -24,6 +24,7 @@ ingress:
   tls:
     enabled: true
     port: 443
+    # secretName: ""  # Override TLS secret name (default: <fullname>-tls)
 
 resources:
   limits:
